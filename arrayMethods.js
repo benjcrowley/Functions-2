@@ -82,7 +82,10 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+
+const myStrongest = monstersInYourPocket.filter(function(monster) {
+  return monster.CP > 200
+})
 
 
 
